@@ -1,0 +1,31 @@
+POSIX字符组	说明			ASCII语言环境	Unicode语言环境
+
+[:alnum:]	字母字符和数字字符	[a-zA-Z0-9]	[\p{L&}\p{Nd}]
+
+[:alpha:]	字母			[a-zA-Z]	\p{L&}
+
+[:ascii:]	ASCII 字符		[\x00-\x7F]	\p{InBasicLatin}
+
+[:blank:]	空格字符和制表符	[ \t]		[\p{Zs}\t]
+
+[:cntrl:]	控制字符		[\x00-\x1F\x7F]	\p{Cc}
+
+[:digit:]	数字字符		[0-9]		\p{Nd}
+
+[:graph:]	空白字符之外的字符	[\x21-\x7E]	[^\p{Z}\p{C}]
+
+[:lower:]	小写字母字符		[a-z]		\p{Ll}
+
+[:print:]	同[:graph:]但包括空白字符[\x20-\x7E]	\P{C}
+
+[:punct:]	标点符号      [][!"#$%&'()*+,./:;<=>?@\^_`{|}~-]   [\p{P}\p{S}]
+
+[:space:]	空白字符		[ \t\r\n\v\f]	[\p{Z}\t\r\n\v\f]
+
+[:upper:]	大写字母字符		[A-Z]		\p{Lu}
+
+[:word:]	字母字符		[A-Za-z0-9_]	[\p{L}\p{N}\p{Pc}]
+
+[:xdigit:]	十六进制字符		[A-Fa-f0-9]	[A-Fa-f0-9]
+
+
