@@ -1,5 +1,5 @@
 #!/bin/bash
-a="皮志强 朱冬冬 黄科 陈志红 李团兵 宋贺 姜一炜 伍小龙 尹杨陈 杨荣 刘秋杰 李偃文"
+a="1 2 3 4 5 6 7 8 9 10 11 12"
 num1=`echo "$a" |awk '{print NF}'`  
 for i in `seq $num1`
 do
